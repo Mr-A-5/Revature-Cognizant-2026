@@ -347,51 +347,6 @@ gadgetStore.orders.insertOne(
 gadgetStore.orders.find();
 
 // Perform join and print values
-// Create Second Collection Orders
-const gadgetStore =
-	db.getSiblingDB(
-		"gadgetStore",
-	);
-gadgetStore.createCollection(
-	"orders",
-	{
-		validator:
-			{
-				$jsonSchema:
-					{
-						bsonType:
-							"object",
-						required:
-							[
-								"product_id",
-								"quantity",
-							],
-						additionalProperties: true,
-						properties:
-							{
-								product_id:
-									{
-										bsonType:
-											"objectId",
-										description:
-											"a reference to a product",
-									},
-								quantity:
-									{
-										bsonType:
-											"int",
-										description:
-											"an integer representing the number of order of the product",
-									},
-							},
-					},
-			},
-		validationAction:
-			"error",
-	},
-);
-
-// Insert order into orders table
 const gadgetStore =
 	db.getSiblingDB(
 		"gadgetStore",
@@ -419,7 +374,7 @@ gadgetStore.orders.aggregate(
 					_id: 0,
 					product:
 						"$product.name",
-					order: "$quantity",
+					quantity: 1,
 				},
 		},
 	],
