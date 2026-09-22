@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Nabla&display=swap");
+
+body {
+	background: #020024;
+	background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 7%, rgba(0, 212, 255, 1) 100%);
+}
+#title {
+	font-family: "Nabla";
+	justify-self: center;
+	width: fit-content;
+}
+
+#main-div {
+	background: #ffffff;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(219, 250, 255, 1) 88%);
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff;
+	width: 40rem;
+	margin: 4rem;
+	padding: 2rem;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #9b9090;
+	border-radius: 20px;
+	margin-top: 0rem;
+	font-family: "Audiowide";
+	justify-self: center;
+}
