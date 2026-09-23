@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="styles.css" />
+		<script src="something.js" defer></script>
 	</head>
 	<body>
 		<h1 id="title">Miguel Fernandez's Portfolio</h1>
@@ -15,7 +16,7 @@
 				who builds and deploys end-to-end applications. I am passionate about crafting scalable, responsive, and
 				high quality mobile and web interfaces. Excited to grow as an engineer alongside a competitive, and like
 				minded team.
-			</p class="main-content">
+			</p>
 			<h2 class="main-content">Technical Skills</h2>
 			<ul class="main-content">
 				<li>Languages: TypeScript, JavaScript, Python, Java, C++, SQL, HTML5, CSS3</li>
@@ -32,6 +33,20 @@
 				<li>B.S. in Computer Science — The University of Texas at Dallas, Richardson, TX (2024 - 2026)</li>
 				<li>A.S. in General Studies — Collin College, Plano, TX (2022 - 2024)</li>
 			</ul>
+			<h2 class="main-content">A bit more about me</h2>
+			<p class="main-content">
+				Lately, I've been playing this phone game, Umamusume Pretty Derby, a lot, so I did some research and
+				found there is an api for information about the characters. Thus, here you have a simple button to get
+				you your own personal Umamusume, Congrats!!!
+			</p>
+			<div>
+				<button id="getUmaButton">Get Yourself an Uma</button>
+				<div id="container">
+					<div id="result"></div>
+				</div>
+			</div>
+			<div id="umaDataContainer"></div>
+			<div id="imgContainer"></div>
 		</div>
 	</body>
 </html>

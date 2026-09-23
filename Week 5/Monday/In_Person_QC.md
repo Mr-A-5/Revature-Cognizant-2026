@@ -8,7 +8,7 @@ A lambda is a short way to write an anonymous function. The syntax is (parameter
 
 3. Explain stream API?
 
-The Stream API lets you process collections in a functional style: you describe what you want instead of writing loops, and it doesn't change the original collection. A stream pipeline has three parts. First is a source, like a list connection. You would use list.stream() to get the stream. Next are intermediate operations like filter(), map(), and sorted(), which are lazy and don't run until the end. Last is a terminal operation like collect() or count(), which triggers the pipeline and returns the result. For example, you could use a stream to get the sorted names of all employees in the IT department, you'd filter by department, map to names, sort, and collect into a list. That's one short, readable line instead of a loop with if-statements.
+The Stream API lets you process collections in a functional style that avoids writing verbose and hard to read loops. A stream pipeline has three parts. First is a source, like a list connection. You would use list.stream() to get the stream. Next are intermediate operations like filter(), map(), and sorted(). Last is a terminal operation like collect() or count(), which triggers the pipeline and returns the result. For example, you could use a stream to get the sorted names of all employees in the IT department, you'd filter by department, map to names, sort, and collect into a list. That's one short, readable line instead of a loop with if-statements.
 
 ```java
 List<String> itNames = employees.stream()

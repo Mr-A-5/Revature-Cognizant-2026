@@ -28,3 +28,14 @@ body {
 	font-family: "Audiowide";
 	justify-self: center;
 }
+
+#imgContainer img {
+	max-width: 15rem;
+	height: auto;
+	justify-self: center;
+}
+
+#umaDataContainer {
+	display: flex;
+	flex-direction: column;
+}
